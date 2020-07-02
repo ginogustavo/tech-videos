@@ -1,2 +1,2 @@
-# tech-videos
+# Technology Videos
 Video library and recommendations
