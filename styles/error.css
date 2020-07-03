@@ -1,0 +1,172 @@
+body {
+  margin: 0px;
+  background: linear-gradient(#1c2541, #5bc0be);
+  font-family: "Muli", sans-serif;
+}
+
+.header {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__img {
+  height: 70px;
+  width: 70px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.header__menu {
+  margin-right: 30px;
+}
+.header__menu ul {
+  display: none;
+  list-style: none;
+  padding: 0px;
+  position: absolute;
+  width: 100px;
+  text-align: right;
+  margin: 0px 0px 0px -14px; /*Negavtive so it can take more spaces (for mouse over)*/
+}
+.header__menu:hover ul,
+ul:hover {
+  display: block;
+}
+.header__menu li {
+  margin: 10px 0px;
+}
+.header__menu li a {
+  color: white;
+  text-decoration: none;
+}
+.header__menu li a:hover {
+  text-decoration: underline;
+}
+
+.header__menu--profile {
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.header__menu--profile img {
+  margin-right: 8px;
+  width: 40px;
+  height: 40px;
+}
+
+.header__menu--profile p {
+  color: white;
+  margin: 0;
+}
+
+.main {
+  min-height: calc(100vh - 200px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main__title {
+  color: white;
+  font-size: 25px;
+}
+
+/*======404 Error Animation=======================*/
+.box {
+  width: 340px;
+  height: 350px;
+  float: left;
+  overflow: hidden;
+}
+.text {
+  text-align: center;
+  margin-top: 0px;
+  color: white;
+  font-size: 120px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+.animated {
+  animation-duration: 2.5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+@keyframes hinge {
+  0% {
+    transform: rotate(0);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+  20%,
+  60% {
+    transform: rotate(80deg);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+  40% {
+    transform: rotate(60deg);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+  80% {
+    transform: rotate(60deg) translateY(0);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+  100% {
+    transform: translateY(700px);
+  }
+}
+.hinge {
+  margin-left: 100px;
+  animation-name: hinge;
+}
+@media all and (max-width: 680px) {
+  .box {
+    width: 100%;
+    height: 55px;
+    clear: both;
+    margin: 0px auto;
+  }
+  .text {
+    margin-top: 20px;
+  }
+  .hingebox,
+  .flipbox {
+    display: none;
+  }
+}
+/*============================*/
+
+.footer {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+}
+.footer a {
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  padding-left: 30px;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+  .login__container {
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    width: 100%;
+  }
+  .footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
