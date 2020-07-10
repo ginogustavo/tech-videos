@@ -1,31 +1,15 @@
-$whiteColor: white;
-
 body {
   margin: 0px;
   background: linear-gradient(#1c2541, #5bc0be);
   font-family: "Muli", sans-serif;
 }
 
-// .flex{
-//   display: flex;
-//   align-items: center;
-// }
-@mixin flex{
+.header {
+  height: 100px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
-
-.header {
-  // @extend .flex;
-
-  @include flex; 
-  // display: flex;
-  // align-items: center;
-  height: 100px;
-  justify-content: space-between;
-}
-
-
 .header__img {
   height: 70px;
   width: 70px;
@@ -50,15 +34,11 @@ ul:hover {
 }
 .header__menu li {
   margin: 10px 0px;
-  a{
-    color: white;
-    text-decoration: none;  
-  }
 }
-// .header__menu li a {
-//   color: white;
-//   text-decoration: none;
-// }
+.header__menu li a {
+  color: white;
+  text-decoration: none;
+}
 .header__menu li a:hover {
   text-decoration: underline;
 }
@@ -88,7 +68,7 @@ ul:hover {
   flex-direction: column;
 }
 .main__title {
-  color: $whiteColor;
+  color: white;
   font-size: 25px;
 }
 
