@@ -8,21 +8,20 @@
       href="https://fonts.googleapis.com/css2?family=Muli:wght@200&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles/register.css" />
-    <!-- <link rel="stylesheet" href="styles/login.css" /> -->
+    <link rel="stylesheet" href="../styles/css_base/register.css" />
   </head>
   <body>
     <header class="header">
-      <img class="header__img" src="img/logoG2.png" alt="Logo" />
+      <img tabindex="0" class="header__img" src="../assets/logoG2.png" alt="Logo" />
     </header>
 
     <section class="register">
       <section class="register__container">
-        <h2>Register</h2>
+        <h2 tabindex="0">Register</h2>
         <form class="register__container--form">
-          <input type="text" class="input" name="" id="" placeholder="Name" />
-          <input type="text" class="input" name="" id="" placeholder="Email" />
-          <input
+          <input aria-label="Name" type="text" class="input" name="" id="" placeholder="Name" />
+          <input aria-label="Email" type="text" class="input" name="" id="" placeholder="Email" />
+          <input aria-label="Password"
             type="password"
             class="input"
             name=""

@@ -8,20 +8,19 @@
       href="https://fonts.googleapis.com/css2?family=Muli:wght@200&display=swap"
       rel="stylesheet"
     />
-    <!-- <link rel="stylesheet" href="styles/video.css" /> -->
-    <link rel="stylesheet" href="styles/login.css" />
+    <link rel="stylesheet" href="../styles/css_base/login.css" />
   </head>
   <body>
     <header class="header">
-      <img class="header__img" src="img/logoG2.png" alt="Logo" />
+      <img tabindex="0" class="header__img" src="../assets/logoG2.png" alt="Logo" />
     </header>
 
     <section class="login">
       <section class="login__container">
-        <h2>Log in</h2>
+        <h2 tabindex="0">Log in</h2>
         <form class="login__container--form">
-          <input type="text" class="input" placeholder="Email" />
-          <input type="password" class="input" placeholder="Password" />
+          <input aria-label="Email" type="text" class="input" placeholder="Email" />
+          <input aria-label="Password" type="password" class="input" placeholder="Password" />
           <button class="button">Log in</button>
           <div class="login__container--remember-me">
             <label>
@@ -33,11 +32,11 @@
 
         <section class="login__container--social-media">
           <div>
-            <img src="img/assets/google-icon.png" alt="Google Logo" /> Log in
+            <img src="../assets/google-icon.png" alt="Google Logo" /> Log in
             using Google
           </div>
           <div>
-            <img src="img/assets/twitter-icon.png" alt="Twitter Logo" /> Log in
+            <img src="../assets/twitter-icon.png" alt="Twitter Logo" /> Log in
             using Twitter
           </div>
         </section>
