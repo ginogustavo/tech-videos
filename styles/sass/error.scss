@@ -1,30 +1,15 @@
-$whiteColor: white;
-
 body {
   margin: 0px;
   background: linear-gradient(#1c2541, #5bc0be);
   font-family: "Muli", sans-serif;
 }
 
-// .flex{
-//   display: flex;
-//   align-items: center;
-// }
-@mixin flex{
+.header {
+  height: 100px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
-
-.header {
-  // @extend .flex;
-
-  @include flex; 
-  // display: flex;
-  // align-items: center;
-  height: 100px;
-  justify-content: space-between;
-}
-
 
 .header__img {
   height: 70px;
@@ -32,9 +17,11 @@ body {
   margin-top: 10px;
   margin-left: 10px;
 }
+
 .header__menu {
   margin-right: 30px;
 }
+
 .header__menu ul {
   display: none;
   list-style: none;
@@ -42,23 +29,24 @@ body {
   position: absolute;
   width: 100px;
   text-align: right;
-  margin: 0px 0px 0px -14px; /*Negavtive so it can take more spaces (for mouse over)*/
+  margin: 0px 0px 0px -14px;
+  /*Negavtive so it can take more spaces (for mouse over)*/
 }
+
 .header__menu:hover ul,
 ul:hover {
   display: block;
 }
+
 .header__menu li {
   margin: 10px 0px;
-  a{
-    color: white;
-    text-decoration: none;  
-  }
 }
-// .header__menu li a {
-//   color: white;
-//   text-decoration: none;
-// }
+
+.header__menu li a {
+  color: white;
+  text-decoration: none;
+}
+
 .header__menu li a:hover {
   text-decoration: underline;
 }
@@ -87,8 +75,9 @@ ul:hover {
   align-items: center;
   flex-direction: column;
 }
+
 .main__title {
-  color: $whiteColor;
+  color: white;
   font-size: 25px;
 }
 
@@ -99,6 +88,7 @@ ul:hover {
   float: left;
   overflow: hidden;
 }
+
 .text {
   text-align: center;
   margin-top: 0px;
@@ -107,6 +97,7 @@ ul:hover {
   font-family: sans-serif;
   text-transform: uppercase;
 }
+
 .animated {
   animation-duration: 2.5s;
   animation-fill-mode: both;
@@ -119,8 +110,7 @@ ul:hover {
     transform-origin: top left;
     animation-timing-function: ease-in-out;
   }
-  20%,
-  60% {
+  20%, 60% {
     transform: rotate(80deg);
     transform-origin: top left;
     animation-timing-function: ease-in-out;
@@ -143,6 +133,7 @@ ul:hover {
   margin-left: 100px;
   animation-name: hinge;
 }
+
 @media all and (max-width: 680px) {
   .box {
     width: 100%;
@@ -150,22 +141,24 @@ ul:hover {
     clear: both;
     margin: 0px auto;
   }
+
   .text {
     margin-top: 20px;
   }
+
   .hingebox,
-  .flipbox {
+.flipbox {
     display: none;
   }
 }
 /*============================*/
-
 .footer {
   display: flex;
   align-items: center;
   height: 100px;
   width: 100%;
 }
+
 .footer a {
   color: white;
   cursor: pointer;
@@ -185,8 +178,12 @@ ul:hover {
     padding: 0px;
     width: 100%;
   }
+
   .footer {
     align-items: flex-start;
     flex-direction: column;
   }
 }
+/*# sourceMappingURL=error.css.map */
+
+/*# sourceMappingURL=error.scss.map */
