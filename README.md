@@ -16,3 +16,5 @@ Reviewed some commons ones like LESS, Stylus but decided to use SASS
 # Accessibility:
 Used ANDI tool to debug HTML elements to make sure they have the correct tab and labels.
 Used VoiceOver screen reader to test.
+
+![](https://raw.githubusercontent.com/ginogustavo/tech-videos/master/assets/TechVideos.jpg)
